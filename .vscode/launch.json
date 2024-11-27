@@ -1,0 +1,50 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "args": ["../", "--ghAuthToken=", "--ghOrg=ui5-community"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "name": "Yeoman generator",
+      "program": "~/.homebrew/lib/node_modules/yo/lib/cli.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node",
+      "cwd": "${workspaceFolder}/test"
+    },
+    {
+      "args": ["../", "--ghAuthToken=", "--ghOrg=ui5-community", "--addGhOrg=yeoman"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "name": "Yeoman generator (addGhOrg)",
+      "program": "~/.homebrew/lib/node_modules/yo/lib/cli.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node",
+      "cwd": "${workspaceFolder}/test"
+    },
+    {
+      "args": ["../", "ts-app", "--ghAuthToken=", "--ghOrg=ui5-community", "--addGhOrg=yeoman"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "name": "Yeoman generator ts-app (addGhOrg)",
+      "program": "~/.homebrew/lib/node_modules/yo/lib/cli.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node",
+      "cwd": "${workspaceFolder}/test"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Mocha All",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": ["--timeout", "999999", "--colors", "${workspaceFolder}/test"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "generator-ui5-test-v5",
+  "private": true,
+  "module": "generators/app/index.js",
+  "type": "module",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "files": [
+    "helpers",
+    "generators"
+  ]
+}

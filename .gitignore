@@ -1,0 +1,15 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore plugins
+/plugins/*
+
+# Ignore test files
+/test/_/*
+
+# Ignore PNPM and YARN lock files
+pnpm-lock.yaml
+yarn.lock
+
+# Ignore Mac files
+.DS_Store
